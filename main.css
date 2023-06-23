@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root{
+    --font01: 'Passion One', cursive;
+    --font02: 'Sriracha', cursive;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header,
+footer{
+    background-color: black;
+    color: white;
+    text-align:  center;
+    padding: 20px;
+    font-size: 25pt;
+}
+
+header > h1{
+    font-family: var(--font01);
+    font-size: 10vw;
+    padding-top: 50px;
+    font-variant: small-caps; /* Small caps deixa a primeira letra maior */
+}
+
+header > p {
+    padding-bottom: 50px;
+    font-size: 2vw;
+}
+
+
+footer>p{
+    font-size: 10px;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.normal{
+    display: flex;
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.normal > p{
+    text-align: justify;
+    font-size: 2.2vw;
+    font-style: italic;
+    text-align: justify;
+    padding: 10px;
+    font-family: var(--font02);
+    margin-bottom: 1em;
+}
+
+#img01{
+    display: inline-block;
+    background-image: url(images/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+    
+}
+
+#img02{
+    display: inline-block;
+    background-image: url(images/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right center;
+    box-shadow: inset 6px 6px 10 rgba(0, 0, 0, 0.455);
+}
+
+#img01 > p,
+#img02 > p{
+    display: inline-block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.389);
+    border-radius: 10px;
+    padding: 25px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.274);
+}
